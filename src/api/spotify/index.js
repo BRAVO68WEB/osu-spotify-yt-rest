@@ -1,7 +1,7 @@
-import { Router } from 'express'
-import { show } from './controller'
+import { Router } from "express";
+import { show } from "./controller";
 
-const router = new Router()
+const router = new Router();
 
 /**
  * @api {get} /spot/:id Retrieve spotify
@@ -11,7 +11,6 @@ const router = new Router()
  * @apiError {Object} 400 Some parameters may contain invalid values.
  * @apiError 404 Spotify not found.
  */
-router.get('/:id',
-  show)
+router.get("/:trackID", show);
 
-export default router
+export default router;

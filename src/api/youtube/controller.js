@@ -26,7 +26,6 @@ export const show = ({ params }, res, next) => {
         title = videoTitle.substring(0, bracketIndex);
       }
       const data = await v2.beatmaps.search({ query: title });
-      console.log(title);
       res.json(data);
     })
     .catch(function (error) {
